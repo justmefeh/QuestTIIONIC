@@ -1,0 +1,50 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <div class="botao">
+      <ion-button fill="clear" color="light" (click)="home()">Voltar
+        <ion-icon slot="start" name="chevron-back" color="light"></ion-icon>
+      </ion-button>
+    </div>
+    <div class="text">
+      <ion-title>Cadastro</ion-title>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form>
+    <ion-item lines="full">
+      <ion-label position="stacked">Nome Completo</ion-label>
+      <ion-input type="text" name="nomeCompleto" [(ngModel)]="formData.nomeCompleto" required></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="stacked">E-mail</ion-label>
+      <ion-input type="email" name="email" placeholder="exemplo@email.com" [(ngModel)]="formData.email" required></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="stacked">Senha</ion-label>
+      <ion-input type="password" name="senha" [(ngModel)]="formData.senha" required></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="stacked">Confirme sua Senha</ion-label>
+      <ion-input type="password" name="confirmarSenha" [(ngModel)]="formData.confirmarSenha" required></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="stacked">CPF</ion-label>
+      <ion-input type="number" name="cpf" placeholder="000.000.000-00" [(ngModel)]="formData.cpf" required></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="stacked">Data de Nascimento</ion-label>
+      <ion-input type="date" name="dataNascimento" [(ngModel)]="formData.dataNascimento" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Sexo</ion-label>
+      <ion-select interface="popover" name="sexo" placeholder="Selecione" [(ngModel)]="formData.sexo">
+        <ion-select-option value="Masculino">Masculino</ion-select-option>
+        <ion-select-option value="Feminino">Feminino</ion-select-option>
+        <ion-select-option value="Outro">Outro</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-button type="submit" color="primary" expand="block" (click)="cadastrar()">Cadastrar</ion-button>
+  </form>
+</ion-content>

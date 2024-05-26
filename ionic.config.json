@@ -1,0 +1,7 @@
+{
+  "name": "QuestTI",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

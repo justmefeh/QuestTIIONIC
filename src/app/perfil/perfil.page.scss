@@ -1,0 +1,40 @@
+.botao {
+  display: inline-block;
+
+}
+
+.text {
+  display: inline-block;
+
+}
+
+.main {
+  .imagem {
+    width: 100px;
+    height: auto;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .nome {
+    margin-top: 10px;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: auto;
+    height: auto;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .info {
+    height: 200px;
+    width: 350px;
+    border: solid 5px;
+    border-color: blue;
+    border-radius: 15%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -1,0 +1,48 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <div class="botao">
+      <ion-button fill="clear" color="light" (click)="inicio()">Voltar
+        <ion-icon slot="start" name="chevron-back" color="light"></ion-icon>
+      </ion-button>
+    </div>
+    <div class="text">
+      <ion-title>Criação de Simulado</ion-title>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="tags">
+    <ion-card color="primary">
+      <ion-card-header>
+        <ion-title class="text" align="center">Selecione suas matérias</ion-title>
+        <ion-searchbar class="text" animated="true"></ion-searchbar>
+      </ion-card-header>
+      <ion-checkbox>Lógica de Programação</ion-checkbox>
+      <ion-checkbox>Banco de Dados</ion-checkbox>
+      <ion-checkbox>Redes de Computadores</ion-checkbox>
+      <ion-checkbox>Phyton</ion-checkbox>
+      <ion-checkbox>Web Coding</ion-checkbox>
+      <ion-checkbox>Mobile Coding</ion-checkbox>
+      <ion-checkbox>UX/Ui</ion-checkbox>
+      <ion-checkbox>C#</ion-checkbox>
+    </ion-card>
+  </div>
+  <div class="configs">
+    <ion-card color="primary">
+      <ion-card-header>
+        <ion-title align="center">Tempo</ion-title>
+      </ion-card-header>
+      <ion-list>
+        <ion-item>
+          <ion-select interface="popover" placeholder="Tempo de simulado">
+            <ion-select-option value="15 Min">20 Minutos - 10 Questões</ion-select-option>
+            <ion-select-option value="30 Min">30 Minutos - 15 Questões</ion-select-option>
+            <ion-select-option value="60 Min">60 Minutos - 30 Questões</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+    </ion-card>
+  </div>
+  <ion-button expand="block" (click)="simulado()">Iniciar</ion-button>
+</ion-content>

@@ -1,0 +1,39 @@
+.botao {
+  width: auto;
+  height: 50px;
+
+  border-radius: 25px;
+
+}
+
+.texto {
+  font-size: 50px;
+}
+
+.navbar {
+  --background: rgb(0, 31, 63);
+  --background: linear-gradient(59deg, rgba(0, 31, 63, 1) 0%, rgba(135, 206, 235, 1) 40%, rgba(60, 97, 162, 1) 90%);
+
+}
+
+ion-content {
+  --background: rgb(0, 31, 63);
+  --background: linear-gradient(59deg, rgba(0, 31, 63, 1) 0%, rgba(65, 105, 225, 1) 20%, rgba(135, 206, 235, 1) 40%, rgba(173, 216, 230, 1) 70%, rgba(60, 97, 162, 1) 90%);
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.circuit-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('/assets/circuito1.png') no-repeat center center;
+  background-size: cover;
+  opacity: 0.2;
+  /* Adjust opacity as needed */
+  pointer-events: none;
+  /* To make sure clicks pass through this layer */
+}

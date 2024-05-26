@@ -1,0 +1,23 @@
+.botao {
+  display: inline-block;
+  margin-left: 0%;
+  margin-right: auto;
+  margin-top: 0%;
+  margin-bottom: auto;
+}
+
+.text {
+  display: inline-block;
+
+}
+
+ion-checkbox {
+  --size: 20px;
+  --checkbox-background-checked: #4fc86d;
+}
+
+ion-checkbox::part(container) {
+  border-radius: 5px;
+  border: 2px solid #000000;
+  margin-right: 10px;
+}

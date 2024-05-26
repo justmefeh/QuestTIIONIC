@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <div class="botao">
+    <ion-button fill="clear" color="light" (click)="home()">Voltar
+        <ion-icon slot="start" name="chevron-back" color="light"></ion-icon>
+    </ion-button>
+    </div>
+    <div class="text">
+      <ion-title>Recuperação de Senha</ion-title>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h1 class="message">Para recuperar sua senha,digite seu e-mail abaixo</h1>
+  <form>
+    <ion-item lines="full">
+      <ion-label position="floating">E-mail</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+    <ion-button id="alerta" type="submit" color="primary" expand="block">Enviar</ion-button>
+    <ion-alert trigger="alerta" header="Link enviado"
+      message="Um link para a redefinição de senha foi enviado para o seu e-mail." [buttons]="alertbuttons"></ion-alert>
+  </form>
+</ion-content>
